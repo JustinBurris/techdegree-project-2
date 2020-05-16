@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: auto;
+    background: #F6F6F6;
+}
+
+.cap {
+    text-transform: uppercase;
+}
+
+
+/*** HIDE FOOTER NAV ON MOBILE ***/
+
+.tab-desk {
+    display: none;
+}
+
+
+/************ LINKS ************/
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #1E1E1E;
+}
+
+a:hover {
+    color: #A6A6A6;
+}
+
+a:visited {
+    color: #1E1E1E;
+}
+
+
+/************ HEADINGS ************/
+
+h1 {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 16px;
+}
+
+h2 {
+    font-size: .9em;
+    text-align: center;
+    padding: 30px 0;
+}
+
+h3 {
+    font-size: 1em;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+h4 {
+    font-size: .9em;
+}
+
+p {
+    text-align: center;
+}
+
+
+/************ HEADER & NAV ************/
+
+header {
+    padding: 0 10px;
+}
+
+header nav a {
+    background: white;
+    display: block;
+    font-size: .9em;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+
+/************ INTRODUCTION ************/
+
+.introduction {
+    padding: 26px 10px;
+    color: #606060;
+}
+
+.introduction img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+/************ PORTFOLIO ************/
+
+#portfolio {
+    padding: 0 2.5% 4% 2.5%;
+    background: white;
+}
+
+article {
+    margin: 0 0 16px 0;
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    font-size: 1em;
+}
+
+
+/************ CONTACT ************/
+
+#contact {
+    padding: 20px 10px 26px 10px;
+}
+
+#contact p {
+    padding: 10px 16px;
+    color: #606060;
+}
+
+#contact p a {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 700;
+    color: #606060;
+}
+
+
+/************ FOOTER ************/
+
+footer {
+    margin: 16px 16px 0 16px;
+    padding: 20px 0;
+    border-top: 1px solid #D3D3D3;
+}
+
+footer h4 {
+    float: left;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav a {
+    font-size: .9em;
+    font-weight: 700;
+}
+
+
+/********************** TABLET **********************/
+
+@media screen and (min-width: 768px) {
+    /******** HEADER AN NAV ********/
+    header {
+        margin-bottom: 20px;
+    }
+    header nav {
+        width: 50%;
+        margin: auto;
+    }
+    header nav a {
+        background: none;
+        display: inline-block;
+        width: 32.6%;
+        margin-bottom: 0;
+    }
+    /******** INTRODUCTION ********/
+    .introduction {
+        padding: 26px 24px;
+    }
+    .introduction img {
+        float: right;
+        width: 50%;
+        padding-left: 10px;
+    }
+    .introduction p {
+        float: left;
+        width: 50%;
+        text-align: left;
+        font-size: 1.3em;
+    }
+    /******** PORTFOLIO ********/
+    article {
+        float: left;
+        width: 49%;
+        height: 100%;
+        margin-bottom: 35px;
+    }
+    article:nth-child(odd) {
+        margin-left: 2%;
+    }
+    /******** CONTACT ********/
+    #contact {
+        padding: 10px 150px;
+    }
+    .mobile {
+        display: none;
+    }
+    .tab-desk {
+        display: inline-block;
+    }
+    /******** FOOTER ********/
+    footer {
+        padding-bottom: 30px;
+    }
+}
+
+
+/********************** DESKTOP **********************/
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        padding: 20px 20px 0 20px;
+        max-width: 960px;
+    }
+    /******** HEADER AN NAV ********/
+    header {
+        padding: 10px 24px;
+    }
+    header h1 {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    header nav {
+        float: right;
+        margin: auto;
+        text-align: right;
+        width: auto;
+    }
+    header nav a {
+        display: inline;
+        margin-bottom: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+    header nav a:hover {
+        color: #A6A6A6;
+    }
+    /******** PORTFOLIO ********/
+    #portfolio article {
+        width: 32%;
+        margin-left: 2%;
+    }
+    #portfolio article:nth-child(3n + 2) {
+        margin-left: 0;
+    }
+    /******** CONTACT ********/
+    #contact p {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+
+/************ CLEARFIX ************/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
